@@ -6,6 +6,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import SearchDialog from '@/components/search/SearchDialog';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' });
@@ -46,6 +47,7 @@ export default function RootLayout({
             <Footer />
           </div>
           <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>

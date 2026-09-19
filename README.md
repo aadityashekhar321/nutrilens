@@ -16,6 +16,7 @@ Empowering consumers to look past deceptive food marketing, decode the "health h
 [![Google Gemini 3.6 Flash](https://img.shields.io/badge/AI_Engine-Gemini_3.6_Flash-8E75B2?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 [![USDA FoodData](https://img.shields.io/badge/Dataset-USDA_FoodData-10B981?style=for-the-badge&logo=usda&logoColor=white)](https://fdc.nal.usda.gov/)
 [![Vercel Analytics](https://img.shields.io/badge/Analytics-Vercel_Web-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/analytics)
+[![Vercel Speed Insights](https://img.shields.io/badge/Performance-Speed_Insights-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/docs/speed-insights)
 [![License: MIT](https://img.shields.io/badge/License-MIT-F59E0B.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <br />
@@ -241,7 +242,8 @@ flowchart TB
 | **Styling** | **Tailwind CSS** | `v4.0` | Design tokens, CSS custom variables, glassmorphism |
 | **AI Engine** | **Google Gemini** | `3.6 Flash` | Structured nutritional inference and health halo risk assessment |
 | **Data Viz** | **Recharts** | `3.10` | Responsive SVG grouped bar charts and custom delta spectrometer |
-| **Telemetry** | **Vercel Analytics**| `1.5.0` | Privacy-focused real-time visitor telemetry and web vitals |
+| **Telemetry** | **Vercel Analytics**| `1.5.0` | Privacy-focused real-time visitor telemetry and page views |
+| **Performance**| **Speed Insights** | `1.2.0` | Real User Monitoring (RUM) for Core Web Vitals (LCP, FID, CLS, INP) |
 | **Icons** | **Lucide React** | Latest | Feather-weight SVG iconography |
 | **Theming** | **next-themes** | Latest | System-aware dark, light, and obsidian mode toggle |
 | **Data Baseline**| **USDA FoodData** | Official | USDA Agricultural Research Service nutritional profiles |
