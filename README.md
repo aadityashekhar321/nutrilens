@@ -1,22 +1,22 @@
 <a name="top"></a>
 <div align="center">
 
-<img src="./public/icon.svg" alt="NutriLens Logo Emblem" width="76" height="76" style="filter: drop-shadow(0 0 24px rgba(16,185,129,0.45)); margin-bottom: 8px;" />
+<img src="./public/icon.svg" alt="NutriLens Logo Emblem" width="84" height="84" style="margin-bottom: 8px;" />
 
 # 🌿 NutriLens
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=10B981&center=true&vCenter=true&width=620&lines=Next-Gen+Nutrition+Intelligence;Decode+the+Deceptive+%22Health+Halo%22;Standardize+Foods+to+100g+Baselines;Expose+FDA+21+CFR+Regulatory+Loopholes;Powered+by+Google+Gemini+3.6+Flash+%26+USDA" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=10B981&center=true&vCenter=true&width=640&lines=Next-Gen+Nutrition+Intelligence;Decode+Deceptive+%22Health+Halos%22;Standardize+Foods+to+100g+Baselines;Expose+FDA+21+CFR+101+Loopholes;Powered+by+Google+Gemini+3.6+Flash+%26+USDA" alt="Typing SVG" />
 </p>
 
-**The open-source nutritional intelligence engine that decodes misleading marketing claims, translates abstract grams into tangible physical sugar cubes, and exposes biochemical reality.**
+**The open-source clinical nutrition intelligence engine. Unmasking deceptive marketing claims, translating abstract grams into physical sugar cubes, and standardizing food data to verified biochemical reality.**
 
 <br />
 
 <!-- ACTION BUTTONS -->
 <p align="center">
   <a href="https://github.com/aadityashekhar321/nutrilens"><img src="https://img.shields.io/badge/🚀_Live_Demo-Explore_NutriLens-10B981?style=for-the-badge" alt="Live Demo" /></a>
-  <a href="https://vercel.com/new/clone?repository-url=https://github.com/aadityashekhar321/nutrilens"><img src="https://img.shields.io/badge/▲_Deploy_to_Vercel-1--Click_Clone-000000?style=for-the-badge&logo=vercel" alt="Deploy to Vercel" /></a>
+  <a href="https://vercel.com/new/clone?repository-url=https://github.com/aadityashekhar321/nutrilens"><img src="https://img.shields.io/badge/▲_Deploy_to_Vercel-Instant_Clone-000000?style=for-the-badge&logo=vercel" alt="Deploy to Vercel" /></a>
   <a href="#-getting-started--local-setup"><img src="https://img.shields.io/badge/⚡_Quickstart-Local_Setup-3B82F6?style=for-the-badge" alt="Quickstart" /></a>
   <a href="https://github.com/aadityashekhar321/nutrilens/issues"><img src="https://img.shields.io/badge/🐛_Report_Deception-Submit_Case-F43F5E?style=for-the-badge" alt="Report Deception" /></a>
 </p>
@@ -27,8 +27,8 @@
   <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18.3-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /></a>
   <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-v4.0-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind" /></a>
-  <a href="https://ai.google.dev/"><img src="https://img.shields.io/badge/Gemini_AI-3.6_Flash-8E75B2?style=flat-square&logo=google&logoColor=white" alt="Gemini" /></a>
-  <a href="https://fdc.nal.usda.gov/"><img src="https://img.shields.io/badge/USDA_FoodData-Official-10B981?style=flat-square&logo=usda&logoColor=white" alt="USDA" /></a>
+  <a href="https://ai.google.dev/"><img src="https://img.shields.io/badge/AI_Engine-Gemini_3.6_Flash-8E75B2?style=flat-square&logo=google&logoColor=white" alt="Gemini" /></a>
+  <a href="https://fdc.nal.usda.gov/"><img src="https://img.shields.io/badge/Dataset-USDA_FoodData-10B981?style=flat-square&logo=usda&logoColor=white" alt="USDA" /></a>
   <a href="https://vercel.com/analytics"><img src="https://img.shields.io/badge/Vercel-Analytics-000000?style=flat-square&logo=vercel&logoColor=white" alt="Analytics" /></a>
   <a href="https://vercel.com/docs/speed-insights"><img src="https://img.shields.io/badge/Speed-Insights-000000?style=flat-square&logo=vercel&logoColor=white" alt="Speed Insights" /></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-F59E0B.svg?style=flat-square" alt="License: MIT" /></a>
@@ -36,9 +36,9 @@
 
 <br />
 
-<!-- 4K HERO BANNER -->
+<!-- AUTHENTIC HERO SCREENSHOT -->
 <a href="#-core-diagnostic-engines">
-  <img src="./public/images/banner.jpg" alt="NutriLens Intelligence Engine Banner" width="100%" style="border-radius: 16px; border: 1px solid rgba(255,255,255,0.18); box-shadow: 0 30px 60px -15px rgba(0,0,0,0.9);" />
+  <img src="./public/images/real_truth_scanner.png" alt="NutriLens Live Platform Interface" width="100%" />
 </a>
 
 <br />
@@ -53,17 +53,14 @@
 - [⚡ The $14B Health Halo Problem](#-the-14b-health-halo-problem)
 - [⚔️ Why NutriLens? (Competitive Matrix)](#️-why-nutrilens-competitive-matrix)
 - [🔄 How It Works (4-Stage Pipeline)](#-how-it-works-4-stage-pipeline)
-- [📸 Visual Interface Showcase](#-visual-interface-showcase)
-- [🌟 Core Diagnostic Engines (Bento Grid)](#-core-diagnostic-engines)
+- [🌟 Core Diagnostic Engines (With Verified Screenshots)](#-core-diagnostic-engines)
   - [1. Truth Scanner 2.0](#1--truth-scanner-20-)
   - [2. Food Face-Off Spectrometer](#2-️-food-face-off-spectrometer-compare)
   - [3. AI Food Scanner](#3--ai-food-scanner-food-insight)
   - [4. Interactive Label Detective HUD](#4-️-interactive-label-detective-hud-label-detective)
   - [5. Smart Swaps Studio](#5--smart-swaps-studio-alternatives)
   - [6. Athlete MythBusters](#6--athlete-mythbusters-athletes)
-  - [7. Sneaky Culprits Radar](#7--sneaky-culprits-radar-explore)
-  - [8. Global Command Bar](#8-️-global-command-bar-k--ctrlk)
-- [🧬 Sample Neural Food Output (JSON)](#-sample-neural-food-output)
+- [🧬 Real Neural Inspection Output (Gemini 3.6 Flash)](#-real-neural-inspection-output)
 - [🔬 Clinical Methodology & Regulatory Science](#-clinical-methodology--regulatory-science)
 - [🏛️ System Architecture](#️-system-architecture)
 - [🛠️ Technology Stack](#️-technology-stack)
@@ -80,7 +77,7 @@
 
 ## ⚡ The $14B Health Halo Problem
 
-Food conglomerates invest over **$14 Billion annually** in sensory marketing, earthy kraft-paper packaging, and greenwashed buzzwords. By exploiting terms like *"Natural"*, *"Multi-Grain"*, *"Immunity-Boosting"*, and *"Made with Real Fruit"*, brands create a psychological **"Health Halo"** that persuades consumers to buy ultra-processed desserts masquerading as daily wellness essentials.
+Food conglomerates spend upwards of **$14 Billion each year** crafting deceptive front-of-pack claims. By exploiting buzzwords like *"All-Natural"*, *"Multi-Grain"*, *"Immunity-Boosting"*, and *"Made with Real Fruit"*, industrial food processors create a psychological **"Health Halo"**—tricking well-intentioned consumers into purchasing ultra-processed desserts marketed as daily wellness staples.
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────┐
@@ -95,13 +92,13 @@ Food conglomerates invest over **$14 Billion annually** in sensory marketing, ea
 └──────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-**NutriLens** is the antidote. Grounded in **USDA FoodData Central** biochemical baselines and driven by **Google Gemini 3.6 Flash**, NutriLens calculates exact nutrient balances, normalizes misleading serving sizes to standardized 100g baselines, and flags regulatory loopholes in milliseconds.
+**NutriLens** breaks this illusion. Grounded in **USDA FoodData Central** biochemical baselines and powered by the **Google Gemini 3.6 Flash AI Engine**, NutriLens calculates exact nutrient balances, normalizes misleading serving sizes to standardized 100g baselines, and flags regulatory loopholes in real time.
 
 ---
 
 ## ⚔️ Why NutriLens? (Competitive Matrix)
 
-Most existing nutrition apps are glorified barcode scanners designed to trap users into tedious calorie-logging subscriptions. NutriLens was built from the ground up as an **objective intelligence and public health literacy platform**.
+Most commercial nutrition apps are designed as tedious calorie-counting diaries behind paywalls. NutriLens was built from the ground up as an **objective intelligence and public health literacy platform**.
 
 | Capability / Feature | 🌿 NutriLens | MyFitnessPal | Yuka | Fooducate |
 | :--- | :---: | :---: | :---: | :---: |
@@ -119,149 +116,106 @@ Most existing nutrition apps are glorified barcode scanners designed to trap use
 
 ## 🔄 How It Works (4-Stage Pipeline)
 
-<table width="100%">
-  <thead>
-    <tr>
-      <th width="25%" align="center"><b>1. 📥 Ingestion & Parsing</b></th>
-      <th width="25%" align="center"><b>2. 🧠 Neural Audit</b></th>
-      <th width="25%" align="center"><b>3. ⚖️ Biochemical Baseline</b></th>
-      <th width="25%" align="center"><b>4. 💡 Empower & Swap</b></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="left" valign="top">
-        • Instant text input or category selection<br/>
-        • Query normalization & XSS sanitizer<br/>
-        • In-memory sliding window rate-limiter
-      </td>
-      <td align="left" valign="top">
-        • <b>Google Gemini 3.6 Flash</b> engine<br/>
-        • Deconstructs 60+ hidden sugar aliases<br/>
-        • Evaluates glycemic spike hazards<br/>
-        • Cross-references AHA daily thresholds
-      </td>
-      <td align="left" valign="top">
-        • <b>USDA FoodData Central</b> baselines<br/>
-        • 100g standardized normalization<br/>
-        • Full-container reality multipliers<br/>
-        • Flags FDA 21 CFR 101 loopholes
-      </td>
-      <td align="left" valign="top">
-        • Tangible 4g sugar cube visualizations<br/>
-        • Annual sugar cut & soda can analogies<br/>
-        • 1-to-1 habit-preserving smart upgrades<br/>
-        • Evidence-based sports nutrition
-      </td>
-    </tr>
-  </tbody>
-</table>
-
----
-
-## 📸 Visual Interface Showcase
-
-<div align="center">
-
-<img src="./public/images/truth_scanner.jpg" alt="NutriLens Food Truth Scanner HUD" width="100%" style="border-radius: 16px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.85);" />
-
-*Figure 1: NutriLens Truth Scanner 2.0 — Dual-split viewport contrasting marketing buzzwords against real biochemical impact.*
-
-</div>
+| 1. 📥 Ingestion & Parsing | 2. 🧠 Neural Audit | 3. ⚖️ Biochemical Baseline | 4. 💡 Empower & Swap |
+| :--- | :--- | :--- | :--- |
+| • Instant text query or category<br>• Query sanitization & rate-limiting<br>• Client-side fuzzy indexing | • **Google Gemini 3.6 Flash**<br>• Deconstructs 60+ sugar aliases<br>• Evaluates glycemic spike risks<br>• Flags AHA ceiling violations | • **USDA FoodData Central**<br>• Standardized 100g normalization<br>• Container reality math<br>• FDA 21 CFR loophole audit | • Tangible 4g sugar cube models<br>• Annual pounds of sugar spared<br>• 1-to-1 whole food alternatives<br>• Evidence-based sports facts |
 
 ---
 
 ## 🌟 Core Diagnostic Engines
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🔍 Truth Scanner 2.0 (<code>/</code>)</h3>
-      <p><b>Interactive dual-viewport slider exposing deceptive front-of-pack claims.</b></p>
-      <ul>
-        <li><b>Dual-Lens Scrubbing:</b> Real-time scrubbing between <code>🏷️ Marketing Claim</code>, <code>⚖️ 50/50 Split</code>, and <code>🔬 Lab Reality</code> presets.</li>
-        <li><b>Physical Sugar Cube Stacks:</b> Translates abstract grams into visual 4-gram sugar cubes (e.g. 24g sugar = 🟫🟫🟫🟫🟫🟫 6 physical cubes).</li>
-        <li><b>Biochemical Telemetry Ticker:</b> Live streaming marquee showcasing clinical stats, glycemic impact notes, and regulatory warning flags.</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>⚖️ Food Face-Off Spectrometer (<code>/compare</code>)</h3>
-      <p><b>Head-to-head comparison engine with honest 100g baseline normalization.</b></p>
-      <ul>
-        <li><b>100g Baseline Normalizer:</b> Eliminates manufacturer tricks of shrinking serving sizes to 25g to make sugar numbers look artificially safe.</li>
-        <li><b>8 Food Categories:</b> Head-to-head matchups across Dairy, Granola, Cereals, Beverages, Bread, Snacks, Protein, and Energy Foods.</li>
-        <li><b>Recharts Spectrometer:</b> Grouped delta bar charts with automated superiority score badges (<i>"+150% Superior Fiber"</i>).</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🤖 AI Food Scanner (<code>/food-insight</code>)</h3>
-      <p><b>Neural food deconstruction powered by Google Gemini 3.6 Flash.</b></p>
-      <ul>
-        <li><b>Any Food Search:</b> Queries real packaged products, brand ingredients, and complex formulations (*"Oatly Barista"*, *"Chobani Vanilla"*).</li>
-        <li><b>Portion Reality Multiplier:</b> Scale between <code>1.0x</code>, <code>1.5x</code>, <code>2.0x</code>, and <code>2.5x</code> with dynamic macro recalculation.</li>
-        <li><b>AHA Ceiling Warning:</b> Alerts when portion exceeds the American Heart Association's 25g daily added sugar maximum.</li>
-        <li><b>Radial Truth Gauge:</b> Animated 0–100 deception dial with color-coded risk alerts (*Clean, Moderate, High Deception*).</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🕵️ Label Detective HUD (<code>/label-detective</code>)</h3>
-      <p><b>Interactive FDA Nutrition Facts panel with container reality math.</b></p>
-      <ul>
-        <li><b>Interactive X-Ray:</b> Clickable inspect zones across Serving Size, Sugars, Fats, and Sodium.</li>
-        <li><b>Container Reality Math:</b> Instant full-package multiplier (e.g. <code>140 kcal × 2.5 servings = 350 kcal</code> and <code>12g sugar × 2.5 = 30g total / 7.5 cubes</code>).</li>
-        <li><b>Deception Challenge:</b> Gamified case file auditing 3 hidden manufacturer tricks.</li>
-        <li><b>Aisle Checklist:</b> 5-second grocery checklist with live mastery progress tracking.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🔄 Smart Swaps Studio (<code>/alternatives</code>)</h3>
-      <p><b>1-to-1 food upgrades with compounding annual health savings.</b></p>
-      <ul>
-        <li><b>Compounding Calculator:</b> Adjust weekly frequency (1–14x/wk) to calculate annual sugar and caloric cut.</li>
-        <li><b>Tangible Analogies:</b> Visualizes pounds of pure sugar purged (e.g. <code>14.6 lbs/year</code>), 12oz soda cans avoided, and metabolic rest days spared.</li>
-        <li><b>Delta Macro Pills:</b> Highlights exact net savings (<code>-18g Sugar</code>, <code>+6g Protein</code>, <code>+4g Fiber</code>).</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🥊 Athlete MythBusters (<code>/athletes</code>)</h3>
-      <p><b>Evidence-based debunking of sports nutrition pseudo-science.</b></p>
-      <ul>
-        <li><b>Peer-Reviewed Rigor:</b> Covers Protein Synthesis, Glycogen Replenishment, Hydration & Electrolytes, and Recovery Windows.</li>
-        <li><b>Instant Filter & Search:</b> Real-time keyword filter (<code>protein</code>, <code>cramps</code>, <code>timing</code>) and <i>"Bust All"</i> bulk inspection.</li>
-        <li><b>Clinical Protocols:</b> Actionable sports science for strength, endurance, and metabolic conditioning.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🚨 Sneaky Culprits Radar (<code>/explore</code>)</h3>
-      <p><b>Catalog of 60+ hidden sugar aliases and clinical limits.</b></p>
-      <ul>
-        <li><b>60+ Alias Library:</b> Exposes Maltodextrin, Dextrose, Cane Juice, Agave, Barley Malt, and Fruit Juice Concentrates.</li>
-        <li><b>Intake Gap Visualizer:</b> Bar meter comparing safe clinical limits against standard consumer intake (284% over safe limit).</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>⌨️ Global Command Console (<code>⌘K</code> / <code>Ctrl+K</code>)</h3>
-      <p><b>Instant fuzzy search accessible anywhere across the platform.</b></p>
-      <ul>
-        <li><b>Full Keyboard Navigation:</b> Instant arrow key navigation (<code>ArrowUp</code> / <code>ArrowDown</code> / <code>Enter</code>).</li>
-        <li><b>Universal Index:</b> Instant routing across foods, head-to-head comparisons, myths, and label terms.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+### 1. 🔍 Truth Scanner 2.0 (`/`)
+
+*Interactive dual-viewport slider exposing deceptive marketing claims against laboratory reality.*
+
+<div align="center">
+  <img src="./public/images/real_truth_scanner.png" alt="NutriLens Truth Scanner 2.0 Live Interface" width="100%" />
+</div>
+
+- **Dual-Lens Viewport**: Scrub smoothly between `🏷️ Marketing Claim`, `⚖️ 50/50 Split`, and `🔬 Lab Reality` presets.
+- **Physical Sugar Cube Stacks**: Translates abstract grams into visual 4-gram sugar cubes (e.g. 24g sugar = 🟫🟫🟫🟫🟫🟫 6 physical cubes).
+- **Biochemical Telemetry Ticker**: Real-time ticker streaming clinical statistics, glycemic impact notes, and regulatory warning flags.
 
 ---
 
-## 🧬 Sample Neural Food Output
+### 2. ⚖️ Food Face-Off Spectrometer (`/compare`)
+
+*Direct head-to-head comparison engine with honest 100g baseline normalization.*
+
+<div align="center">
+  <img src="./public/images/real_food_faceoff.png" alt="NutriLens Food Face-Off Spectrometer Live Interface" width="100%" />
+</div>
+
+- **100g Baseline Normalization**: Seamlessly toggle between **"📦 As Stated on Box"** and **"⚖️ Standardized 100g Baseline"** to neutralize manufacturer serving size manipulation.
+- **8 Core Categories**: Compare perceived healthy foods against whole-food alternatives across Dairy, Granola, Cereals, Beverages, Bread, Snacks, Protein, and Energy Foods.
+- **Recharts Spectrometer**: Interactive grouped bar charts with custom delta tooltips, relative scales, and dynamic superiority badges (e.g. *"+150% Superior Fiber"*).
+
+---
+
+### 3. 🤖 AI Food Scanner (`/food-insight`)
+
+*Neural food deconstruction and health halo risk assessment powered by Google Gemini 3.6 Flash.*
+
+<div align="center">
+  <img src="./public/images/real_food_scanner.png" alt="NutriLens AI Food Scanner Live Interface" width="100%" />
+</div>
+
+- **Universal Food Lookup**: Analyze any commercial packaged food or beverage in real time (*"Oatly Barista"*, *"Chobani Vanilla"*, *"Kind Dark Chocolate"*).
+- **Portion Reality Multiplier**: Toggle between `1.0x Stated Serving`, `1.5x Typical Bowl`, `2.0x Double Portion`, and `2.5x Entire Container` to recalculate nutrient grams and sugar cubes dynamically.
+- **AHA Ceiling Alert**: Triggers immediate visual warnings when your portion exceeds the American Heart Association's 25g daily added sugar maximum.
+- **Radial Truth Score Gauge (0–100)**: Animated circular SVG dial color-coded by deception risk (*Clean, Moderate Discrepancy, High Deception*).
+
+---
+
+### 4. 🕵️ Interactive Label Detective HUD (`/label-detective`)
+
+*Interactive FDA Nutrition Facts panel with container reality math and deception challenges.*
+
+<div align="center">
+  <img src="./public/images/real_label_detective.png" alt="NutriLens Label Detective HUD Live Interface" width="100%" />
+</div>
+
+- **Nutrition Facts X-Ray**: Interactive FDA-standard Nutrition Facts panel with clickable inspection zones across Serving Size, Sugars, Fats, and Sodium.
+- **Container Reality Math**: Click any line item to reveal the full-package impact (e.g., `140 kcal × 2.5 servings = 350 kcal` and `12g sugar × 2.5 = 30g container sugar / 7.5 physical cubes`).
+- **Interactive Deception Challenge**: Inspect case files, spot 3 hidden manufacturer loopholes, and test your food label literacy.
+- **5-Second Grocery Aisle Checklist**: Practical rule mastery checklist with live progress tracking and certification unlock.
+
+---
+
+### 5. 🔄 Smart Swaps Studio (`/alternatives`)
+
+*1-to-1 food substitutions with a compounding annual sugar savings calculator.*
+
+<div align="center">
+  <img src="./public/images/real_smart_swaps.png" alt="NutriLens Smart Swaps Studio Live Interface" width="100%" />
+</div>
+
+- **Compounding Annual Calculator**:
+  - Adjust weekly swap frequency dynamically from 1 to 14 times per week.
+  - Computes **pounds of pure sugar eliminated annually** (e.g., `14.6 lbs/year`).
+  - Converts savings into tangible analogies: **equivalent 12oz cans of soda purged** and **days of human resting metabolic energy spared**.
+  - Highlights exact macro delta pills (`-18g Sugar`, `+6g Protein`, `+4g Fiber`) on every swap card.
+
+---
+
+### 6. 🥊 Athlete MythBusters (`/athletes`)
+
+*Evidence-based sports nutrition debunking industry pseudo-science.*
+
+<div align="center">
+  <img src="./public/images/real_athlete_myths.png" alt="NutriLens Athlete MythBusters Live Interface" width="100%" />
+</div>
+
+- **Sports Nutrition Evidence Base**: Debunks persistent myths across Protein Synthesis, Glycogen Replenishment, Hydration & Electrolytes, and Recovery Windows.
+- **Live Search & Bulk Actions**: Filter myths by keyword (`protein`, `cramps`, `electrolytes`) or trigger `Bust All` to review all scientific realities at once.
+- **Clinical Training Protocols**: Actionable, peer-reviewed advice for endurance athletes, strength training, and metabolic recovery.
+
+---
+
+## 🧬 Real Neural Inspection Output
 
 <details>
-<summary><b>🔍 Inspect Sample Gemini 3.6 Flash Neural Analysis Payload (Click to expand)</b></summary>
+<summary><b>🔍 Click to Inspect Sample Gemini 3.6 Flash Neural Analysis Payload</b></summary>
 
 ```json
 {
@@ -383,7 +337,7 @@ flowchart TB
 | **AI Engine** | **Google Gemini** | `3.6 Flash` | Structured nutritional inference and health halo risk assessment |
 | **Data Viz** | **Recharts** | `3.10` | Responsive SVG grouped bar charts and custom delta spectrometer |
 | **Telemetry** | **Vercel Analytics**| `1.5.0` | Privacy-focused real-time visitor telemetry and page views |
-| **Performance**| **Speed Insights** | `1.2.0` | Real User Monitoring (RUM) for Core Web Vitals (LCP, FID, CLS, INP) |
+| **Performance**| **Speed Insights** | `2.0.0` | Real User Monitoring (RUM) for Core Web Vitals (LCP, FID, CLS, INP) |
 | **Icons** | **Lucide React** | Latest | Feather-weight SVG iconography |
 | **Theming** | **next-themes** | Latest | System-aware dark, light, and obsidian mode toggle |
 | **Data Baseline**| **USDA FoodData** | Official | USDA Agricultural Research Service nutritional profiles |
@@ -395,12 +349,15 @@ flowchart TB
 ```text
 nutrilens/
 ├── public/
-│   ├── images/
-│   │   ├── banner.jpg                 # 4K showcase banner
-│   │   └── truth_scanner.jpg          # Truth Scanner interface visual
-│   ├── file.svg
-│   ├── globe.svg
-│   └── next.svg
+│   ├── favicon.svg                    # Vector SVG favicon
+│   ├── icon.svg                       # Next.js app icon
+│   └── images/
+│       ├── real_truth_scanner.png     # Live Truth Scanner 2.0 interface
+│       ├── real_food_faceoff.png      # Live Food Face-Off interface
+│       ├── real_food_scanner.png      # Live AI Food Scanner interface
+│       ├── real_label_detective.png   # Live Label Detective HUD interface
+│       ├── real_smart_swaps.png       # Live Smart Swaps Studio interface
+│       └── real_athlete_myths.png     # Live Athlete MythBusters interface
 ├── src/
 │   ├── app/
 │   │   ├── alternatives/page.tsx      # Smart Swaps & Compounding Calculator
@@ -413,6 +370,7 @@ nutrilens/
 │   │   │   ├── food-insight/route.ts  # Gemini AI rate-limited route handler
 │   │   │   └── search/route.ts        # Instant fuzzy search endpoint
 │   │   ├── globals.css                # Obsidian theme, scanlines, animations
+│   │   ├── icon.svg                   # Next.js automatic SVG favicon
 │   │   ├── layout.tsx                 # Root layout with Vercel Analytics & Speed Insights
 │   │   └── page.tsx                   # Truth Scanner 2.0 Hero & Bento Grid
 │   ├── components/
@@ -423,7 +381,7 @@ nutrilens/
 │   │   ├── label/                     # LabelSimulator, DeceptionChallenge, Checklist
 │   │   ├── layout/                    # Full-width glass Navbar, Footer, ThemeToggle
 │   │   ├── search/                    # SearchDialog (keyboard navigation)
-│   │   └── ui/                        # Badge, PageHeader, Error/Loading states
+│   │   └── ui/                        # Logo, Badge, PageHeader, Error/Loading states
 │   ├── data/                          # 9 USDA-grounded nutritional datasets
 │   ├── hooks/                         # use-comparison, use-food-insight, use-search
 │   ├── lib/                           # ai-client, comparison-engine, rules
