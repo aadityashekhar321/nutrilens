@@ -111,34 +111,34 @@ NutriLens is built on the **Next.js 14 App Router** with full TypeScript validat
 
 ```mermaid
 flowchart TB
-    subgraph Client["Client Presentation Layer (React 18 & Next.js App Router)"]
-        UI["Glassmorphic Navigation & Ambient Obsidian Theme"]
-        Scanner["Truth Scanner 2.0 Split Viewport"]
-        HUD["Label Detective HUD & Container Math"]
-        Calc["Annual Compounding Savings Calculator"]
-        SearchModal["Fuzzy Search Console (Cmd+K / Ctrl+K)"]
+    subgraph Client["Client Presentation Layer"]
+        UI["Glassmorphic Navigation and Theme"]
+        Scanner["Truth Scanner Dual Viewport"]
+        HUD["Label Detective HUD and Calculator"]
+        Calc["Annual Health Savings Calculator"]
+        SearchModal["Fuzzy Command Search Console"]
     end
 
-    subgraph Server["Next.js Route Handlers (Server-Side)"]
-        APIFood["POST /api/food-insight"]
-        APISearch["GET /api/search"]
-        RateLimiter["In-Memory Sliding Window Rate Limiter (10 req/min)"]
-        InputSanitizer["Input Validator & Schema Sanitizer"]
+    subgraph Server["Next.js Route Handlers"]
+        APIFood["POST api food-insight"]
+        APISearch["GET api search"]
+        RateLimiter["Sliding Window Rate Limiter"]
+        InputSanitizer["Input Validator and Sanitizer"]
     end
 
-    subgraph Intelligence["Intelligence & Data Layer"]
-        Gemini["Google Gemini 3.6 Flash Engine"]
-        USDA["USDA FoodData Central Standard References"]
-        Engine["Biochemical Rules & Normalization Engine (100g)"]
+    subgraph Intelligence["Intelligence and Data Layer"]
+        Gemini["Google Gemini 3.6 Flash AI"]
+        USDA["USDA FoodData Central"]
+        Engine["Biochemical Rules and Normalization Engine"]
     end
 
-    UI -->|Analyze Request| APIFood
-    UI -->|Search Query| APISearch
+    UI --> APIFood
+    UI --> APISearch
     APIFood --> RateLimiter
     RateLimiter --> InputSanitizer
-    InputSanitizer -->|Structured JSON Prompt| Gemini
-    Gemini -->|Strict Schema Response| InputSanitizer
-    InputSanitizer -->|Typed FoodInsightResponse| UI
+    InputSanitizer --> Gemini
+    Gemini --> InputSanitizer
+    InputSanitizer --> UI
     USDA --> Engine
     Engine --> Scanner
     Engine --> HUD
