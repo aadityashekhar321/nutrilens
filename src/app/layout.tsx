@@ -31,7 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${dmSans.variable} font-sans min-h-screen flex flex-col bg-[var(--background)] relative overflow-x-hidden selection:bg-emerald-500/20 selection:text-emerald-500`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider 
+          attribute="class" 
+          defaultTheme="dark" 
+          enableSystem 
+          themes={['light', 'dark', 'cyberpunk', 'forest', 'sunset', 'ocean', 'system']}
+        >
           <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 bg-emerald-500 text-white px-4 py-2 rounded-full font-medium shadow-lg">
             Skip to content
           </a>

@@ -300,8 +300,14 @@ export default function Navbar() {
             })}
           </div>
 
+          {/* Mobile Theme Switcher Bar */}
+          <div className="pt-3 border-t border-[var(--border)] flex items-center justify-between px-1">
+            <span className="text-xs font-bold text-[var(--text-secondary)]">Atmosphere Palette:</span>
+            <ThemeToggle />
+          </div>
+
           {/* Quick CTA */}
-          <div className="pt-2">
+          <div className="pt-1">
             <Link
               href="/food-insight"
               className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold text-xs shadow-md shadow-emerald-500/20"

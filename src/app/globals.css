@@ -49,6 +49,93 @@
     --cyan-accent: #06B6D4;
     --rose-accent: #FB7185;
     --amber-accent: #FBBF24;
+
+    --theme-ambient-1: rgba(16, 185, 129, 0.09);
+    --theme-ambient-2: rgba(6, 182, 212, 0.06);
+  }
+
+  /* ⚡ Cyberpunk 2077 Theme */
+  .cyberpunk {
+    --background: #080014;
+    --surface: #120124;
+    --surface-hover: #1f033a;
+    --surface-elevated: #18022e;
+    --border: #320754;
+    --border-glow: rgba(255, 0, 122, 0.4);
+    --text-primary: #fdf4ff;
+    --text-secondary: #d8b4fe;
+    --text-muted: #a855f7;
+    
+    --emerald-accent: #ff007a;
+    --cyan-accent: #00f0ff;
+    --rose-accent: #ff2a5f;
+    --amber-accent: #ffe600;
+
+    --theme-ambient-1: rgba(255, 0, 122, 0.14);
+    --theme-ambient-2: rgba(0, 240, 255, 0.10);
+  }
+
+  /* 🌲 Bio-Luminescent Forest Matrix Theme */
+  .forest {
+    --background: #02140d;
+    --surface: #05261a;
+    --surface-hover: #0a3a28;
+    --surface-elevated: #083021;
+    --border: #13523a;
+    --border-glow: rgba(45, 212, 191, 0.4);
+    --text-primary: #f0fdf4;
+    --text-secondary: #86efac;
+    --text-muted: #4ade80;
+    
+    --emerald-accent: #10b981;
+    --cyan-accent: #2dd4bf;
+    --rose-accent: #f87171;
+    --amber-accent: #a3e635;
+
+    --theme-ambient-1: rgba(16, 185, 129, 0.16);
+    --theme-ambient-2: rgba(163, 230, 53, 0.10);
+  }
+
+  /* 🌅 Solar Sunset / Volcanic Amber Theme */
+  .sunset {
+    --background: #140b07;
+    --surface: #22120b;
+    --surface-hover: #321c11;
+    --surface-elevated: #28160e;
+    --border: #4a2818;
+    --border-glow: rgba(249, 115, 22, 0.4);
+    --text-primary: #fffbeb;
+    --text-secondary: #fed7aa;
+    --text-muted: #f97316;
+    
+    --emerald-accent: #f97316;
+    --cyan-accent: #fbbf24;
+    --rose-accent: #ef4444;
+    --amber-accent: #f59e0b;
+
+    --theme-ambient-1: rgba(249, 115, 22, 0.15);
+    --theme-ambient-2: rgba(251, 191, 36, 0.10);
+  }
+
+  /* 🌊 Ocean Abyss / Deep Marine Theme */
+  .ocean {
+    --background: #020d1a;
+    --surface: #06192e;
+    --surface-hover: #0c2745;
+    --surface-elevated: #092039;
+    --border: #133c66;
+    --border-glow: rgba(56, 189, 248, 0.4);
+    --text-primary: #f0f9ff;
+    --text-secondary: #bae6fd;
+    --text-muted: #38bdf8;
+    
+    --emerald-accent: #0284c7;
+    --cyan-accent: #38bdf8;
+    --rose-accent: #f43f5e;
+    --amber-accent: #38bdf8;
+
+    --theme-ambient-1: rgba(56, 189, 248, 0.14);
+    --theme-ambient-2: rgba(6, 182, 212, 0.09);
   }
 
   * {
@@ -60,8 +147,8 @@
     color: var(--text-primary);
     @apply transition-colors duration-300 antialiased;
     background-image: 
-      radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.07) 0%, transparent 60%),
-      radial-gradient(circle at 100% 100%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
+      radial-gradient(circle at 50% 0%, var(--theme-ambient-1, rgba(16, 185, 129, 0.07)) 0%, transparent 60%),
+      radial-gradient(circle at 100% 100%, var(--theme-ambient-2, rgba(6, 182, 212, 0.05)) 0%, transparent 50%);
     background-attachment: fixed;
   }
 }
