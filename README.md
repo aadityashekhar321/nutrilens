@@ -1,6 +1,8 @@
 <a name="top"></a>
 <div align="center">
 
+<img src="./public/icon.svg" alt="NutriLens Logo Emblem" width="76" height="76" style="filter: drop-shadow(0 0 24px rgba(16,185,129,0.45)); margin-bottom: 8px;" />
+
 # 🌿 NutriLens
 
 <p align="center">

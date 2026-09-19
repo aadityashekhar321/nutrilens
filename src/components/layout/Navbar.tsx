@@ -18,6 +18,7 @@ import {
   Flame
 } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
+import Logo from '@/components/ui/Logo';
 
 interface NavItem {
   name: string;
@@ -103,19 +104,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand Mark */}
         <div className="flex items-center gap-6">
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="relative w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-500 via-teal-400 to-cyan-500 flex items-center justify-center text-white shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform">
-              <Flame className="w-5 h-5 fill-white/30" />
-              <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-[var(--background)] animate-pulse" />
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="font-extrabold text-lg sm:text-xl font-['var(--font-dm-sans)'] tracking-tight text-[var(--text-primary)]">
-                Nutri<span className="text-emerald-500">Lens</span>
-              </span>
-              <span className="hidden lg:inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                USDA Verified
-              </span>
-            </div>
+          <Link href="/" className="group flex items-center focus:outline-hidden">
+            <Logo size="md" showBadge />
           </Link>
 
           {/* Desktop Navigation Links */}

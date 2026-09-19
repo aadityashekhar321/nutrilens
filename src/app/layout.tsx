@@ -14,6 +14,13 @@ const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' });
 export const metadata: Metadata = {
   title: 'NutriLens | Next-Gen Nutrition Intelligence & Truth Engine',
   description: 'AI-powered nutrition intelligence. Decode misleading food labels, discover hidden ingredients, and compare products side-by-side.',
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/icon.svg',
+  },
 };
 
 export default function RootLayout({

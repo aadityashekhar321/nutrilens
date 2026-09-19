@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Flame, ShieldCheck, Activity, Sparkles, ExternalLink } from 'lucide-react';
+import { ShieldCheck, Activity, Sparkles, ExternalLink } from 'lucide-react';
+import Logo from '@/components/ui/Logo';
 
 export default function Footer() {
   return (
@@ -8,13 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand Col */}
           <div className="md:col-span-2 space-y-4">
-            <Link href="/" className="inline-flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-emerald-500 to-cyan-500 flex items-center justify-center text-white shadow-sm">
-                <Flame className="w-4 h-4 fill-white/30" />
-              </div>
-              <span className="font-bold text-xl font-['var(--font-dm-sans)'] tracking-tight text-[var(--text-primary)]">
-                Nutri<span className="text-emerald-500">Lens</span>
-              </span>
+            <Link href="/" className="inline-flex items-center group">
+              <Logo size="md" />
             </Link>
             <p className="text-sm text-[var(--text-secondary)] max-w-sm leading-relaxed">
               Demystifying food marketing with AI-powered nutrition intelligence. We expose health halos and translate misleading labels into actionable dietary clarity.
