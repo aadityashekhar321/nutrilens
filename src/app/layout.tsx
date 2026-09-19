@@ -5,6 +5,7 @@ import { ThemeProvider } from 'next-themes';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import SearchDialog from '@/components/search/SearchDialog';
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' });
@@ -44,6 +45,7 @@ export default function RootLayout({
             </main>
             <Footer />
           </div>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
