@@ -1,0 +1,356 @@
+import { Food } from '@/types';
+
+export const foods: Food[] = [
+  {
+    id: 'f-yogurt-1',
+    name: 'Flavored Low-Fat Yogurt',
+    category: 'yogurt',
+    description: 'A popular fruit-on-the-bottom yogurt that appears healthy but is high in added sugars.',
+    servingSize: { amount: 150, unit: 'g' },
+    nutrition: {
+      calories: 140,
+      protein: 5,
+      totalFat: 1.5,
+      saturatedFat: 1,
+      transFat: 0,
+      carbohydrates: 26,
+      fiber: 0,
+      totalSugar: 22,
+      addedSugar: 14,
+      sodium: 70
+    },
+    ingredients: ['Cultured Pasteurized Grade A Low Fat Milk', 'Sugar', 'Strawberries', 'Modified Corn Starch'],
+    healthHaloRisk: 'high',
+    educationalNotes: 'Often perceived as a healthy breakfast, but contains as much sugar as dessert.'
+  },
+  {
+    id: 'f-yogurt-2',
+    name: 'Plain Greek Yogurt',
+    category: 'yogurt',
+    description: 'Unsweetened Greek yogurt rich in protein with no added sugars.',
+    servingSize: { amount: 150, unit: 'g' },
+    nutrition: {
+      calories: 90,
+      protein: 15,
+      totalFat: 0,
+      saturatedFat: 0,
+      transFat: 0,
+      carbohydrates: 6,
+      fiber: 0,
+      totalSugar: 6,
+      addedSugar: 0,
+      sodium: 55
+    },
+    ingredients: ['Cultured Pasteurized Nonfat Milk'],
+    healthHaloRisk: 'low',
+    educationalNotes: 'Provides three times the protein with no added sugars compared to flavored versions.'
+  },
+  {
+    id: 'f-granola-1',
+    name: 'Honey Oat Granola',
+    category: 'granola',
+    description: 'A crunchy granola blend that boasts natural oats and honey.',
+    servingSize: { amount: 50, unit: 'g' },
+    nutrition: {
+      calories: 220,
+      protein: 4,
+      totalFat: 8,
+      saturatedFat: 1,
+      transFat: 0,
+      carbohydrates: 34,
+      fiber: 3,
+      totalSugar: 12,
+      addedSugar: 12,
+      sodium: 30
+    },
+    ingredients: ['Whole Grain Oats', 'Sugar', 'Canola Oil', 'Honey', 'Brown Sugar Syrup'],
+    healthHaloRisk: 'high',
+    educationalNotes: 'Marketed as a health food, but highly calorically dense and laden with multiple forms of sugar.'
+  },
+  {
+    id: 'f-granola-2',
+    name: 'Low-Sugar Nut Cluster Granola',
+    category: 'granola',
+    description: 'Nut and seed-based granola with minimal sweetening.',
+    servingSize: { amount: 50, unit: 'g' },
+    nutrition: {
+      calories: 250,
+      protein: 7,
+      totalFat: 19,
+      saturatedFat: 3,
+      transFat: 0,
+      carbohydrates: 14,
+      fiber: 5,
+      totalSugar: 3,
+      addedSugar: 2,
+      sodium: 40
+    },
+    ingredients: ['Almonds', 'Pumpkin Seeds', 'Sunflower Seeds', 'Coconut Oil', 'Erythritol', 'A dash of maple syrup'],
+    healthHaloRisk: 'medium',
+    educationalNotes: 'Higher in fat but provides healthy fats and stable energy without the sugar crash.'
+  },
+  {
+    id: 'f-bev-1',
+    name: '100% Apple Juice',
+    category: 'beverages',
+    description: 'Fruit juice often given to children or consumed for breakfast.',
+    servingSize: { amount: 240, unit: 'ml' },
+    nutrition: {
+      calories: 110,
+      protein: 0,
+      totalFat: 0,
+      saturatedFat: 0,
+      transFat: 0,
+      carbohydrates: 28,
+      fiber: 0,
+      totalSugar: 28,
+      addedSugar: 0,
+      sodium: 10
+    },
+    ingredients: ['Apple Juice from Concentrate', 'Ascorbic Acid (Vitamin C)'],
+    healthHaloRisk: 'high',
+    educationalNotes: 'Even without added sugar, the natural sugars hit the bloodstream quickly because the fiber is removed.'
+  },
+  {
+    id: 'f-bev-2',
+    name: 'Whole Apple',
+    category: 'beverages', // Comparing liquid vs solid
+    description: 'A medium sized fresh apple.',
+    servingSize: { amount: 180, unit: 'g' },
+    nutrition: {
+      calories: 95,
+      protein: 0,
+      totalFat: 0,
+      saturatedFat: 0,
+      transFat: 0,
+      carbohydrates: 25,
+      fiber: 4,
+      totalSugar: 19,
+      addedSugar: 0,
+      sodium: 2
+    },
+    ingredients: ['Apples'],
+    healthHaloRisk: 'low',
+    educationalNotes: 'Contains fiber which slows down sugar absorption and increases satiety.'
+  },
+  {
+    id: 'f-bread-1',
+    name: 'Multigrain Bread',
+    category: 'bread',
+    description: 'Bread topped with seeds but made primarily with refined flour.',
+    servingSize: { amount: 35, unit: 'g' },
+    nutrition: {
+      calories: 100,
+      protein: 4,
+      totalFat: 2,
+      saturatedFat: 0,
+      transFat: 0,
+      carbohydrates: 18,
+      fiber: 1,
+      totalSugar: 3,
+      addedSugar: 2,
+      sodium: 180
+    },
+    ingredients: ['Enriched Wheat Flour', 'Water', 'Sugar', 'Flaxseed', 'Yeast'],
+    healthHaloRisk: 'high',
+    educationalNotes: '"Multigrain" just means multiple grains were used, not that they are whole grains.'
+  },
+  {
+    id: 'f-bread-2',
+    name: '100% Whole Wheat Bread',
+    category: 'bread',
+    description: 'Bread made entirely from whole wheat flour.',
+    servingSize: { amount: 35, unit: 'g' },
+    nutrition: {
+      calories: 90,
+      protein: 5,
+      totalFat: 1,
+      saturatedFat: 0,
+      transFat: 0,
+      carbohydrates: 16,
+      fiber: 3,
+      totalSugar: 1,
+      addedSugar: 0,
+      sodium: 140
+    },
+    ingredients: ['Whole Wheat Flour', 'Water', 'Yeast', 'Salt'],
+    healthHaloRisk: 'low',
+    educationalNotes: 'Guaranteed to contain all parts of the grain kernel, providing essential fiber.'
+  },
+  {
+    id: 'f-snack-1',
+    name: 'Veggie Chips',
+    category: 'snack-foods',
+    description: 'Chips colored with vegetable powders to appear healthy.',
+    servingSize: { amount: 28, unit: 'g' },
+    nutrition: {
+      calories: 130,
+      protein: 1,
+      totalFat: 7,
+      saturatedFat: 1,
+      transFat: 0,
+      carbohydrates: 18,
+      fiber: 1,
+      totalSugar: 1,
+      addedSugar: 0,
+      sodium: 250
+    },
+    ingredients: ['Potato Flour', 'Potato Starch', 'Canola Oil', 'Tomato Paste', 'Spinach Powder', 'Salt'],
+    healthHaloRisk: 'high',
+    educationalNotes: 'Basically potato chips tinted with vegetable dust. Lacks the nutrients of real vegetables.'
+  },
+  {
+    id: 'f-snack-2',
+    name: 'Roasted Chickpeas',
+    category: 'snack-foods',
+    description: 'Crunchy snack made from whole roasted chickpeas.',
+    servingSize: { amount: 28, unit: 'g' },
+    nutrition: {
+      calories: 110,
+      protein: 6,
+      totalFat: 3,
+      saturatedFat: 0,
+      transFat: 0,
+      carbohydrates: 16,
+      fiber: 5,
+      totalSugar: 1,
+      addedSugar: 0,
+      sodium: 150
+    },
+    ingredients: ['Chickpeas', 'Olive Oil', 'Sea Salt'],
+    healthHaloRisk: 'low',
+    educationalNotes: 'A true vegetable-based snack rich in protein and fiber.'
+  },
+  {
+    id: 'f-protein-1',
+    name: 'Chocolate Peanut Butter Protein Bar',
+    category: 'protein-products',
+    description: 'A bar marketed for muscle recovery or energy.',
+    servingSize: { amount: 60, unit: 'g' },
+    nutrition: {
+      calories: 260,
+      protein: 20,
+      totalFat: 10,
+      saturatedFat: 4,
+      transFat: 0,
+      carbohydrates: 25,
+      fiber: 1,
+      totalSugar: 16,
+      addedSugar: 15,
+      sodium: 200
+    },
+    ingredients: ['Protein Blend', 'Sugar', 'Peanuts', 'Corn Syrup', 'Palm Kernel Oil', 'Cocoa'],
+    healthHaloRisk: 'high',
+    educationalNotes: 'Often essentially a candy bar with added protein isolate.'
+  },
+  {
+    id: 'f-protein-2',
+    name: 'Hard Boiled Eggs (2)',
+    category: 'protein-products',
+    description: 'Two whole large eggs, hard boiled.',
+    servingSize: { amount: 100, unit: 'g' },
+    nutrition: {
+      calories: 140,
+      protein: 12,
+      totalFat: 10,
+      saturatedFat: 3,
+      transFat: 0,
+      carbohydrates: 1,
+      fiber: 0,
+      totalSugar: 1,
+      addedSugar: 0,
+      sodium: 120
+    },
+    ingredients: ['Eggs'],
+    healthHaloRisk: 'low',
+    educationalNotes: 'A natural source of highly bioavailable protein without added sugars.'
+  },
+  {
+    id: 'f-cereal-1',
+    name: 'Oat Cluster Cereal',
+    category: 'breakfast-cereals',
+    description: 'Cereal claiming to be heart-healthy and made with whole grains.',
+    servingSize: { amount: 55, unit: 'g' },
+    nutrition: {
+      calories: 210,
+      protein: 5,
+      totalFat: 4,
+      saturatedFat: 0.5,
+      transFat: 0,
+      carbohydrates: 42,
+      fiber: 4,
+      totalSugar: 14,
+      addedSugar: 14,
+      sodium: 160
+    },
+    ingredients: ['Whole Grain Oats', 'Sugar', 'Canola Oil', 'Almonds', 'Honey'],
+    healthHaloRisk: 'high',
+    educationalNotes: 'Despite the heart-healthy claim, the high sugar content negates many benefits.'
+  },
+  {
+    id: 'f-cereal-2',
+    name: 'Plain Oatmeal (Rolled Oats)',
+    category: 'breakfast-cereals',
+    description: 'Simple unflavored rolled oats prepared with water.',
+    servingSize: { amount: 40, unit: 'g' },
+    nutrition: {
+      calories: 150,
+      protein: 5,
+      totalFat: 2.5,
+      saturatedFat: 0.5,
+      transFat: 0,
+      carbohydrates: 27,
+      fiber: 4,
+      totalSugar: 1,
+      addedSugar: 0,
+      sodium: 0
+    },
+    ingredients: ['Whole Grain Rolled Oats'],
+    healthHaloRisk: 'low',
+    educationalNotes: 'A true whole grain breakfast without any added sugars.'
+  },
+  {
+    id: 'f-energy-1',
+    name: 'Sports Drink (Lemon-Lime)',
+    category: 'energy-foods',
+    description: 'Electrolyte beverage marketed for hydration and performance.',
+    servingSize: { amount: 591, unit: 'ml' },
+    nutrition: {
+      calories: 140,
+      protein: 0,
+      totalFat: 0,
+      saturatedFat: 0,
+      transFat: 0,
+      carbohydrates: 36,
+      fiber: 0,
+      totalSugar: 34,
+      addedSugar: 34,
+      sodium: 270
+    },
+    ingredients: ['Water', 'Sugar', 'Dextrose', 'Citric Acid', 'Salt', 'Sodium Citrate', 'Monopotassium Phosphate'],
+    healthHaloRisk: 'high',
+    educationalNotes: 'Unless doing intense exercise for over an hour, you do not need the extra sugar.'
+  },
+  {
+    id: 'f-energy-2',
+    name: 'Electrolyte Water (Zero Sugar)',
+    category: 'energy-foods',
+    description: 'Water infused with electrolytes without added sugar.',
+    servingSize: { amount: 591, unit: 'ml' },
+    nutrition: {
+      calories: 0,
+      protein: 0,
+      totalFat: 0,
+      saturatedFat: 0,
+      transFat: 0,
+      carbohydrates: 0,
+      fiber: 0,
+      totalSugar: 0,
+      addedSugar: 0,
+      sodium: 250
+    },
+    ingredients: ['Water', 'Electrolytes (Sodium, Potassium, Magnesium)'],
+    healthHaloRisk: 'low',
+    educationalNotes: 'Provides necessary hydration and electrolytes without useless calories.'
+  }
+];
