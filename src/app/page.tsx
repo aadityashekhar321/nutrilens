@@ -326,7 +326,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-white/85 dark:bg-black/60 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-amber-500/20 max-w-sm shadow-sm">
+              <div className="bg-white/85 dark:bg-[var(--surface-elevated)]/80 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-amber-500/20 max-w-sm shadow-sm">
                 <span className="text-[10px] uppercase font-bold text-[var(--text-muted)] tracking-wider block">
                   Perceived Wholesomeness
                 </span>
@@ -361,7 +361,7 @@ export default function Home() {
               </div>
 
               {/* Physical Sugar Cubes Representation & Truth Score */}
-              <div className="bg-white/85 dark:bg-black/60 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-rose-500/20 max-w-sm shadow-sm text-right">
+              <div className="bg-white/85 dark:bg-[var(--surface-elevated)]/80 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-rose-500/20 max-w-sm shadow-sm text-right">
                 <div className="flex items-center justify-between gap-4 mb-2 pb-2 border-b border-[var(--border)]">
                   <div className="text-left">
                     <span className="text-[10px] uppercase font-bold text-[var(--text-muted)] tracking-wider block">

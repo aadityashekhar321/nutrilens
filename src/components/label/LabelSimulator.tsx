@@ -53,7 +53,7 @@ export default function LabelSimulator({ sampleData, guides }: LabelSimulatorPro
   return (
     <div className="flex flex-col lg:flex-row gap-8 items-start">
       {/* Interactive HUD Nutrition Panel */}
-      <div className="w-full max-w-sm mx-auto lg:mx-0 bg-white dark:bg-[#070D19] text-black dark:text-white p-5 rounded-2xl border-2 border-black dark:border-white/20 font-sans shrink-0 shadow-2xl relative overflow-hidden">
+      <div className="w-full max-w-sm mx-auto lg:mx-0 bg-white dark:bg-[var(--surface)] text-black dark:text-white p-5 rounded-2xl border-2 border-black dark:border-[var(--border)] font-sans shrink-0 shadow-2xl relative overflow-hidden">
         {/* Header HUD Banner */}
         <div className="flex items-center justify-between pb-2 border-b-2 border-black dark:border-white/20 mb-2 text-[11px] font-mono text-neutral-500 dark:text-neutral-400">
           <span className="flex items-center gap-1">

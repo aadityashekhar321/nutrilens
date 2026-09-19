@@ -17,7 +17,8 @@
 }
 
 @layer base {
-  :root {
+  :root,
+  .light {
     --background: #F8FAF9;
     --surface: #FFFFFF;
     --surface-hover: #F1F5F3;
@@ -32,6 +33,16 @@
     --cyan-accent: #0284C7;
     --rose-accent: #E11D48;
     --amber-accent: #D97706;
+
+    --surface-rgb: 255, 255, 255;
+    --glass-pill-bg: rgba(255, 255, 255, 0.90);
+    --glass-pill-border: rgba(0, 0, 0, 0.08);
+    --glass-pill-text: #334155;
+    --nav-blur-bg: rgba(255, 255, 255, 0.88);
+    --nav-blur-border: #E2E8E5;
+
+    --theme-ambient-1: rgba(16, 185, 129, 0.05);
+    --theme-ambient-2: rgba(2, 132, 199, 0.04);
   }
 
   .dark {
@@ -50,6 +61,13 @@
     --rose-accent: #FB7185;
     --amber-accent: #FBBF24;
 
+    --surface-rgb: 11, 17, 32;
+    --glass-pill-bg: rgba(11, 17, 32, 0.85);
+    --glass-pill-border: rgba(255, 255, 255, 0.12);
+    --glass-pill-text: #CBD5E1;
+    --nav-blur-bg: rgba(3, 7, 18, 0.85);
+    --nav-blur-border: #1E293B;
+
     --theme-ambient-1: rgba(16, 185, 129, 0.09);
     --theme-ambient-2: rgba(6, 182, 212, 0.06);
   }
@@ -61,7 +79,7 @@
     --surface-hover: #1f033a;
     --surface-elevated: #18022e;
     --border: #320754;
-    --border-glow: rgba(255, 0, 122, 0.4);
+    --border-glow: rgba(255, 0, 122, 0.45);
     --text-primary: #fdf4ff;
     --text-secondary: #d8b4fe;
     --text-muted: #a855f7;
@@ -70,6 +88,13 @@
     --cyan-accent: #00f0ff;
     --rose-accent: #ff2a5f;
     --amber-accent: #ffe600;
+
+    --surface-rgb: 18, 1, 36;
+    --glass-pill-bg: rgba(18, 1, 36, 0.88);
+    --glass-pill-border: rgba(255, 0, 122, 0.35);
+    --glass-pill-text: #d8b4fe;
+    --nav-blur-bg: rgba(8, 0, 20, 0.88);
+    --nav-blur-border: #320754;
 
     --theme-ambient-1: rgba(255, 0, 122, 0.14);
     --theme-ambient-2: rgba(0, 240, 255, 0.10);
@@ -92,6 +117,13 @@
     --rose-accent: #f87171;
     --amber-accent: #a3e635;
 
+    --surface-rgb: 5, 38, 26;
+    --glass-pill-bg: rgba(5, 38, 26, 0.88);
+    --glass-pill-border: rgba(45, 212, 191, 0.35);
+    --glass-pill-text: #86efac;
+    --nav-blur-bg: rgba(2, 20, 13, 0.88);
+    --nav-blur-border: #13523a;
+
     --theme-ambient-1: rgba(16, 185, 129, 0.16);
     --theme-ambient-2: rgba(163, 230, 53, 0.10);
   }
@@ -112,6 +144,13 @@
     --cyan-accent: #fbbf24;
     --rose-accent: #ef4444;
     --amber-accent: #f59e0b;
+
+    --surface-rgb: 34, 18, 11;
+    --glass-pill-bg: rgba(34, 18, 11, 0.88);
+    --glass-pill-border: rgba(249, 115, 22, 0.35);
+    --glass-pill-text: #fed7aa;
+    --nav-blur-bg: rgba(20, 11, 7, 0.88);
+    --nav-blur-border: #4a2818;
 
     --theme-ambient-1: rgba(249, 115, 22, 0.15);
     --theme-ambient-2: rgba(251, 191, 36, 0.10);
@@ -134,6 +173,13 @@
     --rose-accent: #f43f5e;
     --amber-accent: #38bdf8;
 
+    --surface-rgb: 6, 25, 46;
+    --glass-pill-bg: rgba(6, 25, 46, 0.88);
+    --glass-pill-border: rgba(56, 189, 248, 0.35);
+    --glass-pill-text: #bae6fd;
+    --nav-blur-bg: rgba(2, 13, 26, 0.88);
+    --nav-blur-border: #133c66;
+
     --theme-ambient-1: rgba(56, 189, 248, 0.14);
     --theme-ambient-2: rgba(6, 182, 212, 0.09);
   }
@@ -155,32 +201,22 @@
 
 @layer utilities {
   .glassmorphism {
-    background: rgba(var(--surface-rgb, 255, 255, 255), 0.7);
+    background: var(--nav-blur-bg);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid var(--border);
   }
-
-  .dark .glassmorphism {
-    background: rgba(11, 17, 32, 0.7);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-  }
   
   .glass-pill {
-    background: rgba(255, 255, 255, 0.85);
+    background: var(--glass-pill-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--glass-pill-border);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.12);
+    color: var(--glass-pill-text);
   }
 
-  .dark .glass-pill {
-    background: rgba(11, 17, 32, 0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  :is(.dark, .forest, .cyberpunk, .sunset, .ocean) .glass-pill {
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
   }
 
@@ -188,14 +224,14 @@
     background: var(--surface);
     border-radius: 1.25rem;
     border: 1px solid var(--border);
-    box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.04);
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  .dark .card {
+  :is(.dark, .forest, .cyberpunk, .sunset, .ocean) .card {
     background: var(--surface);
-    border: 1px solid rgba(255, 255, 255, 0.07);
-    box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.45);
   }
 
   .card:hover {
@@ -328,26 +364,22 @@
 .grid-pattern {
   background-size: 36px 36px;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
 }
 
-:root:not(.dark) .grid-pattern {
+.light .grid-pattern,
+:root:not(:is(.dark, .forest, .cyberpunk, .sunset, .ocean)) .grid-pattern {
   background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
 }
 
 .nav-blur {
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--nav-blur-bg);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-}
-
-.dark .nav-blur {
-  background: rgba(3, 7, 18, 0.82);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  border-color: var(--nav-blur-border);
 }
 
 @keyframes marquee {
