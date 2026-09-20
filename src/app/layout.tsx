@@ -5,7 +5,6 @@ import { ThemeProvider } from 'next-themes';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import SearchDialog from '@/components/search/SearchDialog';
-import ThemeSync from '@/components/layout/ThemeSync';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
@@ -54,8 +53,15 @@ export default function RootLayout({
           defaultTheme="dark" 
           enableSystem 
           themes={['light', 'dark', 'cyberpunk', 'forest', 'sunset', 'ocean', 'system']}
+          value={{
+            light: 'light',
+            dark: 'dark',
+            cyberpunk: 'cyberpunk dark',
+            forest: 'forest dark',
+            sunset: 'sunset dark',
+            ocean: 'ocean dark'
+          }}
         >
-          <ThemeSync />
           <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 bg-emerald-500 text-white px-4 py-2 rounded-full font-medium shadow-lg">
             Skip to content
           </a>
