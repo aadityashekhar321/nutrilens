@@ -52,7 +52,7 @@ export default function RootLayout({
           attribute="class" 
           defaultTheme="dark" 
           enableSystem 
-          themes={['light', 'dark', 'cyberpunk', 'forest', 'sunset', 'ocean', 'system']}
+          themes={['light', 'dark', 'cyberpunk', 'forest', 'sunset', 'ocean']}
           value={{
             light: 'light',
             dark: 'dark',
