@@ -21,7 +21,7 @@ import {
 
 const SCAN_STEPS = [
   'Ingesting packaging nomenclature & brand formulations...',
-  'Querying Google Gemini 2.0 Flash neural model...',
+  'Querying Google Gemini 3.6 Flash neural model...',
   'Auditing 60+ hidden sugar synonyms & emulsifiers...',
   'Cross-referencing USDA FoodData Central baselines...',
   'Calculating clinical Truth Score & AHA threshold...'
@@ -104,7 +104,7 @@ function FoodInsightContent() {
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill mb-4 shadow-sm border border-emerald-500/20">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
           <span className="text-xs font-bold text-[var(--text-secondary)] font-['var(--font-dm-sans)']">
-            Neural Food Scanner • Gemini 2.0 Flash Engine
+            Neural Food Scanner • Gemini 3.6 Flash Engine
           </span>
         </div>
 
