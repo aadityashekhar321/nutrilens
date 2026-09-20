@@ -69,7 +69,7 @@ export default function SearchDialog() {
     
     // Map internal links to our actual application routes
     let target = '/compare';
-    if (result.type === 'food') target = `/compare`;
+    if (result.type === 'food') target = `/food-insight?q=${encodeURIComponent(result.title)}`;
     else if (result.type === 'comparison') target = `/compare`;
     else if (result.type === 'label-term') target = `/label-detective`;
     else if (result.type === 'myth') target = `/athletes`;

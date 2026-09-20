@@ -110,7 +110,7 @@ export default function InsightResult({ result }: { result: FoodInsightResponse 
                 AI Diagnostic Telemetry
               </span>
               <span className="text-xs text-[var(--text-muted)] font-mono">
-                Model: Gemini 3.6 Flash
+                Model: Gemini 2.0 Flash
               </span>
             </div>
 

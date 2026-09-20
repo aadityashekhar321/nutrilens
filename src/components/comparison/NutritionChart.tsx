@@ -14,9 +14,10 @@ export default function NutritionChart({ data, servingMode = 'stated' }: Nutriti
     if (active && payload && payload.length) {
       const entryA = payload[0];
       const entryB = payload[1];
+      if (!entryA) return null;
       const unit = data.find(d => d.displayName === label)?.unit || '';
-      const valA = Number(entryA.value || 0);
-      const valB = Number(entryB.value || 0);
+      const valA = Number(entryA?.value || 0);
+      const valB = Number(entryB?.value || 0);
       const diff = Math.abs(valA - valB);
       const maxVal = Math.max(valA, valB);
       const pctDiff = maxVal > 0 ? Math.round((diff / maxVal) * 100) : 0;
@@ -33,11 +34,13 @@ export default function NutritionChart({ data, servingMode = 'stated' }: Nutriti
             <span className="text-amber-500 font-semibold">{entryA.name}:</span>
             <span className="font-mono font-bold">{valA % 1 === 0 ? valA : valA.toFixed(1)} {unit}</span>
           </div>
-          <div className="flex items-center justify-between gap-4">
-            <span className="text-emerald-500 font-semibold">{entryB.name}:</span>
-            <span className="font-mono font-bold">{valB % 1 === 0 ? valB : valB.toFixed(1)} {unit}</span>
-          </div>
-          {diff > 0 && (
+          {entryB && (
+            <div className="flex items-center justify-between gap-4">
+              <span className="text-emerald-500 font-semibold">{entryB.name}:</span>
+              <span className="font-mono font-bold">{valB % 1 === 0 ? valB : valB.toFixed(1)} {unit}</span>
+            </div>
+          )}
+          {entryB && diff > 0 && (
             <div className="pt-1.5 border-t border-[var(--border)] text-[10px] flex justify-between items-center">
               <span className="text-[var(--text-muted)]">Comparison Delta:</span>
               <span className="font-mono font-bold text-emerald-600 dark:text-emerald-400">

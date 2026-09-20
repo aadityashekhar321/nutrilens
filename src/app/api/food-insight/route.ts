@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getFoodInsight } from '@/lib/ai-client';
-import { validateFoodInsightInput, sanitizeText } from '@/lib/validators';
+import { validateFoodInsightInput } from '@/lib/validators';
 import { FoodInsightRequest, FoodInsightAPIResponse } from '@/types';
 
 // Simple in-memory rate limiting
@@ -59,8 +59,8 @@ export async function POST(request: Request) {
       );
     }
 
-    const sanitizedFoodName = sanitizeText(body.foodName);
-    const sanitizedBrand = body.brand ? sanitizeText(body.brand) : undefined;
+    const sanitizedFoodName = body.foodName.trim();
+    const sanitizedBrand = body.brand ? body.brand.trim() : undefined;
 
     const result = await getFoodInsight(sanitizedFoodName, sanitizedBrand);
     
