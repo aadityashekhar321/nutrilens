@@ -18,7 +18,7 @@
 
 @layer base {
   :root,
-  .light {
+  [data-theme="light"] {
     --background: #F8FAF9;
     --surface: #FFFFFF;
     --surface-hover: #F1F5F3;
@@ -45,7 +45,7 @@
     --theme-ambient-2: rgba(2, 132, 199, 0.04);
   }
 
-  .dark {
+  [data-theme="dark"] {
     --background: #030712;
     --surface: #0B1120;
     --surface-hover: #131E32;
@@ -73,7 +73,7 @@
   }
 
   /* ⚡ Cyberpunk 2077 Theme */
-  .cyberpunk {
+  [data-theme="cyberpunk"] {
     --background: #080014;
     --surface: #120124;
     --surface-hover: #1f033a;
@@ -101,7 +101,7 @@
   }
 
   /* 🌲 Bio-Luminescent Forest Matrix Theme */
-  .forest {
+  [data-theme="forest"] {
     --background: #02140d;
     --surface: #05261a;
     --surface-hover: #0a3a28;
@@ -129,7 +129,7 @@
   }
 
   /* 🌅 Solar Sunset / Volcanic Amber Theme */
-  .sunset {
+  [data-theme="sunset"] {
     --background: #140b07;
     --surface: #22120b;
     --surface-hover: #321c11;
@@ -157,7 +157,7 @@
   }
 
   /* 🌊 Ocean Abyss / Deep Marine Theme */
-  .ocean {
+  [data-theme="ocean"] {
     --background: #020d1a;
     --surface: #06192e;
     --surface-hover: #0c2745;
@@ -216,7 +216,7 @@
     color: var(--glass-pill-text);
   }
 
-  :is(.dark, .forest, .cyberpunk, .sunset, .ocean) .glass-pill {
+  :is(.dark, [data-theme="dark"], [data-theme="forest"], [data-theme="cyberpunk"], [data-theme="sunset"], [data-theme="ocean"]) .glass-pill {
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
   }
 
@@ -228,7 +228,7 @@
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  :is(.dark, .forest, .cyberpunk, .sunset, .ocean) .card {
+  :is(.dark, [data-theme="dark"], [data-theme="forest"], [data-theme="cyberpunk"], [data-theme="sunset"], [data-theme="ocean"]) .card {
     background: var(--surface);
     border: 1px solid var(--border);
     box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.45);
@@ -369,7 +369,7 @@
 }
 
 .light .grid-pattern,
-:root:not(:is(.dark, .forest, .cyberpunk, .sunset, .ocean)) .grid-pattern {
+:root:not(:is(.dark, [data-theme="dark"], [data-theme="forest"], [data-theme="cyberpunk"], [data-theme="sunset"], [data-theme="ocean"])) .grid-pattern {
   background-image: 
     linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);

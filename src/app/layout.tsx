@@ -5,6 +5,7 @@ import { ThemeProvider } from 'next-themes';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import SearchDialog from '@/components/search/SearchDialog';
+import ThemeSync from '@/components/layout/ThemeSync';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
@@ -49,19 +50,12 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${dmSans.variable} font-sans min-h-screen flex flex-col bg-[var(--background)] relative overflow-x-hidden selection:bg-emerald-500/20 selection:text-emerald-500`}>
         <ThemeProvider 
-          attribute="class" 
+          attribute="data-theme" 
           defaultTheme="dark" 
           enableSystem 
-          themes={['light', 'dark', 'cyberpunk', 'forest', 'sunset', 'ocean']}
-          value={{
-            light: 'light',
-            dark: 'dark',
-            cyberpunk: 'cyberpunk dark',
-            forest: 'forest dark',
-            sunset: 'sunset dark',
-            ocean: 'ocean dark'
-          }}
+          themes={['light', 'dark', 'cyberpunk', 'forest', 'sunset', 'ocean', 'system']}
         >
+          <ThemeSync />
           <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 bg-emerald-500 text-white px-4 py-2 rounded-full font-medium shadow-lg">
             Skip to content
           </a>
