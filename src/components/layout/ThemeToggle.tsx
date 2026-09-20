@@ -64,14 +64,7 @@ const THEME_OPTIONS: ThemeOption[] = [
     iconColor: 'text-cyan-400',
     swatches: ['#020D1A', '#06192E', '#38BDF8'],
   },
-  {
-    id: 'light',
-    name: 'Clean Lab',
-    subtitle: 'Surgical white & clinical slate',
-    icon: Sun,
-    iconColor: 'text-amber-500',
-    swatches: ['#F8FAF9', '#FFFFFF', '#059669'],
-  },
+
   {
     id: 'system',
     name: 'System Default',
