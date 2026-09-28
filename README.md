@@ -23,14 +23,14 @@
 
 <!-- SHIELDS BADGE RIBBON -->
 <p align="center">
-  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-14.2.35-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" /></a>
-  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18.3-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /></a>
-  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /></a>
-  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-v4.0-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind" /></a>
+  <a href="https://github.com/aadityashekhar321/nutrilens/actions/workflows/ci.yml"><img src="https://github.com/aadityashekhar321/nutrilens/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-14.2.x-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" /></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18.x-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind" /></a>
   <a href="https://ai.google.dev/"><img src="https://img.shields.io/badge/AI_Engine-Gemini_3.6_Flash-8E75B2?style=flat-square&logo=google&logoColor=white" alt="Gemini" /></a>
-  <a href="https://fdc.nal.usda.gov/"><img src="https://img.shields.io/badge/Dataset-USDA_FoodData-10B981?style=flat-square&logo=usda&logoColor=white" alt="USDA" /></a>
+  <a href="https://fdc.nal.usda.gov/"><img src="https://img.shields.io/badge/Dataset-USDA_FoodData-10B981?style=flat-square" alt="USDA" /></a>
   <a href="https://vercel.com/analytics"><img src="https://img.shields.io/badge/Vercel-Analytics-000000?style=flat-square&logo=vercel&logoColor=white" alt="Analytics" /></a>
-  <a href="https://vercel.com/docs/speed-insights"><img src="https://img.shields.io/badge/Speed-Insights-000000?style=flat-square&logo=vercel&logoColor=white" alt="Speed Insights" /></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-F59E0B.svg?style=flat-square" alt="License: MIT" /></a>
 </p>
 
@@ -330,16 +330,18 @@ flowchart TB
 
 | Layer | Technology | Version | Purpose |
 | :--- | :--- | :--- | :--- |
-| **Framework** | **Next.js** | `14.2.35` | App Router, Server Components, Route Handlers, Turbopack |
-| **UI Library** | **React** | `18.3` | Reactive state management, client hydration, custom hooks |
-| **Language** | **TypeScript** | `5.x` | Strict static typing, schema verification, zero `any` policy |
-| **Styling** | **Tailwind CSS** | `v4.0` | Modern tokens, CSS custom properties, glassmorphism |
+| **Framework** | **Next.js** | `14.2.x` | App Router, Server Components, Route Handlers, Turbopack |
+| **UI Library** | **React** | `18.x` | Reactive state management, client hydration, custom hooks |
+| **Language** | **TypeScript** | `5.x` | Strict static typing, schema verification |
+| **Styling** | **Tailwind CSS** | `v4` | Modern tokens, CSS custom properties, glassmorphism |
+| **Animations** | **Framer Motion** | `13.x` | Spring physics, stagger variants, AnimatePresence |
 | **AI Engine** | **Google Gemini** | `3.6 Flash` | Structured nutritional inference and health halo risk assessment |
 | **Data Viz** | **Recharts** | `3.10` | Responsive SVG grouped bar charts and custom delta spectrometer |
-| **Telemetry** | **Vercel Analytics**| `1.5.0` | Privacy-focused real-time visitor telemetry and page views |
-| **Performance**| **Speed Insights** | `2.0.0` | Real User Monitoring (RUM) for Core Web Vitals (LCP, FID, CLS, INP) |
+| **Telemetry** | **Vercel Analytics**| `2.x` | Privacy-focused real-time visitor telemetry and page views |
+| **Performance**| **Speed Insights** | `2.x` | Real User Monitoring (RUM) for Core Web Vitals (LCP, FID, CLS, INP) |
+| **Testing** | **Vitest** | `2.1.x` | Lightning-fast unit tests with TypeScript and ESM support |
 | **Icons** | **Lucide React** | Latest | Feather-weight SVG iconography |
-| **Theming** | **next-themes** | Latest | System-aware dark, light, and obsidian mode toggle |
+| **Theming** | **next-themes** | `0.4.x` | System-aware dark, light, and custom theme toggle |
 | **Data Baseline**| **USDA FoodData** | Official | USDA Agricultural Research Service nutritional profiles |
 
 ---
