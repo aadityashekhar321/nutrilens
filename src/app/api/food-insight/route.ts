@@ -2,6 +2,25 @@ import { NextResponse } from 'next/server';
 import { getFoodInsight } from '@/lib/ai-client';
 import { validateFoodInsightInput } from '@/lib/validators';
 import { FoodInsightRequest, FoodInsightAPIResponse } from '@/types';
+import { Ratelimit } from '@upstash/ratelimit';
+import { Redis } from '@upstash/redis';
+
+// --- Production Rate Limiter (Upstash Redis) ---
+// Recommended for serverless/edge environments
+const redis = process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN
+  ? new Redis({
+      url: process.env.UPSTASH_REDIS_REST_URL,
+      token: process.env.UPSTASH_REDIS_REST_TOKEN,
+    })
+  : null;
+
+const upstashRatelimit = redis
+  ? new Ratelimit({
+      redis: redis,
+      limiter: Ratelimit.slidingWindow(10, '1 m'),
+      analytics: true,
+    })
+  : null;
 
 // ─── Sliding-Window In-Memory Rate Limiter ───────────────────────────────────
 // Note: This is per-instance. For multi-instance deployments (e.g. Vercel Edge),
@@ -18,7 +37,7 @@ function extractClientIp(request: Request): string {
   return request.headers.get('x-real-ip') || 'unknown';
 }
 
-function checkRateLimit(ip: string): boolean {
+function checkFallbackRateLimit(ip: string): boolean {
   const now = Date.now();
   const timestamps = rateLimitMap.get(ip) || [];
   const recentTimestamps = timestamps.filter((ts) => now - ts < TIME_WINDOW_MS);
@@ -30,7 +49,7 @@ function checkRateLimit(ip: string): boolean {
 
   // Periodically purge stale entries to prevent unbounded memory growth
   if (rateLimitMap.size > MAX_MAP_ENTRIES) {
-    for (const [key, tsList] of rateLimitMap) {
+    for (const [key, tsList] of rateLimitMap.entries()) {
       if (tsList.every((ts) => now - ts >= TIME_WINDOW_MS)) {
         rateLimitMap.delete(key);
       }
@@ -48,14 +67,33 @@ export async function POST(request: Request) {
   try {
     const ip = extractClientIp(request);
 
-    if (!checkRateLimit(ip)) {
-      return NextResponse.json<FoodInsightAPIResponse>(
-        { success: false, error: { code: 'RATE_LIMITED', message: 'Too many requests. Please try again later.' } },
-        {
-          status: 429,
-          headers: { 'Retry-After': '60' },
-        }
-      );
+    // Apply Rate Limiting: Dual approach (Upstash Redis -> In-Memory Fallback)
+    if (upstashRatelimit) {
+      const { success, limit, remaining, reset } = await upstashRatelimit.limit(ip);
+      if (!success) {
+        return NextResponse.json<FoodInsightAPIResponse>(
+          { success: false, error: { code: 'RATE_LIMITED', message: 'Too many requests. Please try again later.' } },
+          {
+            status: 429,
+            headers: {
+              'Retry-After': '60',
+              'X-RateLimit-Limit': limit.toString(),
+              'X-RateLimit-Remaining': remaining.toString(),
+              'X-RateLimit-Reset': reset.toString()
+            },
+          }
+        );
+      }
+    } else {
+      if (!checkFallbackRateLimit(ip)) {
+        return NextResponse.json<FoodInsightAPIResponse>(
+          { success: false, error: { code: 'RATE_LIMITED', message: 'Too many requests. Please try again later.' } },
+          {
+            status: 429,
+            headers: { 'Retry-After': '60' },
+          }
+        );
+      }
     }
 
     const body: Partial<FoodInsightRequest> = await request.json();
