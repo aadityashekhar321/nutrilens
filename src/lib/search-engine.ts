@@ -1,4 +1,4 @@
-import { SearchResult, SearchResultType } from '@/types';
+import { SearchResult } from '@/types';
 import { foods } from '@/data/foods';
 import { comparisons } from '@/data/comparisons';
 import { labelTerms } from '@/data/label-terms';
@@ -17,83 +17,101 @@ export function search(query: string, options: SearchOptions = {}): SearchResult
   const results: SearchResult[] = [];
   const limit = options.limit || 20;
 
-  // Search foods
+  // Search foods → route to /food-insight?q=<food name>
   foods.forEach(food => {
-    if (food.name.toLowerCase().includes(normalizedQuery) || food.description.toLowerCase().includes(normalizedQuery)) {
+    if (
+      food.name.toLowerCase().includes(normalizedQuery) ||
+      food.description.toLowerCase().includes(normalizedQuery)
+    ) {
       results.push({
         id: food.id,
         type: 'food',
         title: food.name,
         excerpt: food.description,
-        link: `/foods/${food.id}`,
+        link: `/food-insight?q=${encodeURIComponent(food.name)}`,
       });
     }
   });
 
-  // Search comparisons
+  // Search comparisons → route to /compare
   comparisons.forEach(comp => {
-    if (comp.title.toLowerCase().includes(normalizedQuery) || comp.description.toLowerCase().includes(normalizedQuery)) {
+    if (
+      comp.title.toLowerCase().includes(normalizedQuery) ||
+      comp.description.toLowerCase().includes(normalizedQuery)
+    ) {
       results.push({
         id: comp.id,
         type: 'comparison',
         title: comp.title,
         excerpt: comp.description,
-        link: `/compare/${comp.categoryId}`,
+        link: `/compare`,
         icon: comp.icon
       });
     }
   });
 
-  // Search label terms
+  // Search label terms → route to /label-detective
   labelTerms.forEach(term => {
-    if (term.term.toLowerCase().includes(normalizedQuery) || term.whatItUsuallyMeans.toLowerCase().includes(normalizedQuery)) {
+    if (
+      term.term.toLowerCase().includes(normalizedQuery) ||
+      term.whatItUsuallyMeans.toLowerCase().includes(normalizedQuery)
+    ) {
       results.push({
         id: term.id,
         type: 'label-term',
         title: term.term,
         excerpt: term.whatItUsuallyMeans,
-        link: `/education/labels#${term.id}`,
+        link: `/label-detective`,
         icon: term.icon
       });
     }
   });
 
-  // Search myths
+  // Search myths → route to /athletes
   athleteMyths.forEach(myth => {
-    if (myth.myth.toLowerCase().includes(normalizedQuery) || myth.truth.toLowerCase().includes(normalizedQuery)) {
+    if (
+      myth.myth.toLowerCase().includes(normalizedQuery) ||
+      myth.truth.toLowerCase().includes(normalizedQuery)
+    ) {
       results.push({
         id: myth.id,
         type: 'myth',
         title: `Myth: ${myth.myth}`,
         excerpt: myth.truth,
-        link: `/education/myths#${myth.id}`,
+        link: `/athletes`,
       });
     }
   });
 
-  // Search alternatives
+  // Search alternatives → route to /alternatives
   foodAlternatives.forEach(alt => {
-    if (alt.popularFood.toLowerCase().includes(normalizedQuery) || alt.alternativeFood.toLowerCase().includes(normalizedQuery)) {
+    if (
+      alt.popularFood.toLowerCase().includes(normalizedQuery) ||
+      alt.alternativeFood.toLowerCase().includes(normalizedQuery)
+    ) {
       results.push({
         id: alt.id,
         type: 'alternative',
         title: `${alt.popularFood} vs ${alt.alternativeFood}`,
         excerpt: alt.reason,
-        link: `/education/alternatives#${alt.id}`,
+        link: `/alternatives`,
         icon: alt.popularFoodIcon
       });
     }
   });
 
-  // Search culprits
+  // Search culprits → route to /explore
   nutritionCulprits.forEach(culprit => {
-    if (culprit.title.toLowerCase().includes(normalizedQuery) || culprit.tagline.toLowerCase().includes(normalizedQuery)) {
+    if (
+      culprit.title.toLowerCase().includes(normalizedQuery) ||
+      culprit.tagline.toLowerCase().includes(normalizedQuery)
+    ) {
       results.push({
         id: culprit.id,
         type: 'culprit',
         title: culprit.title,
         excerpt: culprit.tagline,
-        link: `/education/culprits#${culprit.id}`,
+        link: `/explore`,
         icon: culprit.icon
       });
     }
