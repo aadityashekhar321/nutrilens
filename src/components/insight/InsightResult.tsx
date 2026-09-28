@@ -1,6 +1,6 @@
 'use client';
 import { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { 
   AlertTriangle, 
   Eye, 
@@ -92,12 +92,12 @@ export default function InsightResult({ result }: { result: FoodInsightResponse 
   const checkedCount = Object.values(checkedTips).filter(Boolean).length;
   const totalTips = result.whatToCheckOnLabel?.length || 0;
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     show: { opacity: 1, transition: { staggerChildren: 0.1 } }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
   };
