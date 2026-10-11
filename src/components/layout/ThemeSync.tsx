@@ -2,7 +2,7 @@
 import { useTheme } from 'next-themes';
 import { useEffect } from 'react';
 
-const DARK_THEMES = ['dark', 'cyberpunk', 'forest', 'sunset', 'ocean'];
+const DARK_THEMES = ['dark', 'cyberpunk', 'forest', 'sunset', 'ocean', 'synthwave', 'dracula'];
 
 export default function ThemeSync() {
   const { theme, resolvedTheme } = useTheme();
