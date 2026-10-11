@@ -22,7 +22,7 @@ export async function getFoodInsight(foodName: string, brand?: string): Promise<
 
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({
-    model: 'gemini-3.6-flash',
+    model: 'gemini-2.0-flash',
     generationConfig: {
       temperature: 0.2, // Low temperature for factual accuracy — less creative, more precise
     }
