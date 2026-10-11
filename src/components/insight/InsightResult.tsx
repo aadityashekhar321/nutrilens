@@ -62,7 +62,7 @@ export default function InsightResult({ result }: { result: FoodInsightResponse 
   // Helper to scale nutrient values by portion multiplier
   const scaleNutrient = (rawVal: string | undefined): { val: string; num: number | null; unit: string } => {
     if (!rawVal) return { val: 'N/A', num: null, unit: '' };
-    const match = rawVal.match(/([\d.]+)\s*(g|mg|kcal|oz|ml|%)/i) || rawVal.match(/([\d.]+)/);
+    const match = rawVal.match(/([\d.]+)\s*(mg|mcg|g|kcal|%)?/i);
     if (!match) return { val: rawVal, num: null, unit: '' };
     const num = parseFloat(match[1]);
     const unit = match[2] || 'g';
