@@ -25,6 +25,7 @@ export async function getFoodInsight(foodName: string, brand?: string): Promise<
     model: 'gemini-2.0-flash',
     generationConfig: {
       temperature: 0.2, // Low temperature for factual accuracy — less creative, more precise
+      responseMimeType: 'application/json',
     }
   });
 
@@ -36,7 +37,7 @@ export async function getFoodInsight(foodName: string, brand?: string): Promise<
 1. Base ALL nutritional claims on USDA FoodData Central (FDC) data. If the exact product exists in FDC, use those values. If not, use the closest matching generic food entry.
 2. For branded products, reference the actual Nutrition Facts panel from the manufacturer's official website or packaging.
 3. NEVER fabricate or guess specific numbers. If you are uncertain about a value, say "approximately" or "estimated" and explain why.
-4. When stating sugar/sodium/fat levels, provide the ACTUAL gram amount per serving (e.g., "High added sugar: ~14g per 150g serving, which is 56% of the AHA daily limit for women").
+4. When stating sugar/sodium/fat levels, provide the ACTUAL amount per serving.
 5. Do NOT exaggerate health risks or make alarmist claims. Be factual and measured.
 6. Distinguish between NATURALLY OCCURRING nutrients and ADDED ingredients (e.g., natural lactose sugar in yogurt vs. added sucrose).
 7. If a food genuinely IS healthy, say so. Not everything has a "health halo" problem.
@@ -62,11 +63,11 @@ interface FoodInsightResponse {
   likelyMarketingClaims: string[]; // 2-3 claims commonly made about this food (e.g., "Natural", "Low Fat")
   potentialConcerns: string[]; // 2-3 evidence-based concerns with specific numbers (e.g., "Contains 14g added sugar per serving — 56% of AHA daily limit for women")
   nutritionalHighlights: {
-    sugar: string; // Include actual grams and context (e.g., "14g total, 14g added — exceeds 5% DV threshold")
-    protein: string; // Include grams and % DV
-    fiber: string; // Include grams and % DV
-    sodium: string; // Include mg and % DV
-    fat: string; // Include grams, specify sat/trans if relevant
+    sugar: string; // Amount with unit, e.g. "14g" or "14g added"
+    protein: string; // Amount with unit, e.g. "12g"
+    fiber: string; // Amount with unit, e.g. "4g"
+    sodium: string; // Amount with unit, e.g. "180mg"
+    fat: string; // Amount with unit, e.g. "8g"
   };
   whatToCheckOnLabel: string[]; // 1-3 SPECIFIC things to verify on the Nutrition Facts panel or ingredient list
   betterChoiceGuidance: string; // 1-2 sentences recommending a specific, named alternative with brief nutritional justification
