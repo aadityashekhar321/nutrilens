@@ -20,7 +20,7 @@ import { cn } from '@/lib/utils';
 
 const SCAN_STEPS = [
   { text: 'Ingesting packaging nomenclature & brand formulations...', icon: Database },
-  { text: 'Querying Google Gemini 3.6 Flash neural model...', icon: Binary },
+  { text: 'Querying Google Gemini 2.0 Flash neural model...', icon: Binary },
   { text: 'Auditing 60+ hidden sugar synonyms & emulsifiers...', icon: ShieldAlert },
   { text: 'Cross-referencing USDA FoodData Central baselines...', icon: Activity },
   { text: 'Calculating clinical Truth Score & AHA threshold...', icon: Sparkles }
