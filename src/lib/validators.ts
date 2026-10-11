@@ -19,7 +19,7 @@ export function validateFoodInsightInput(input: string): { isValid: boolean; err
 }
 
 export function validateAIResponse(data: any): data is FoodInsightResponse {
-  if (!data || typeof data !== 'object') return false;
+  if (!data || typeof data !== 'object' || data === null) return false;
 
   const requiredStringFields = [
     'foodName',
@@ -29,7 +29,7 @@ export function validateAIResponse(data: any): data is FoodInsightResponse {
   ];
 
   for (const field of requiredStringFields) {
-    if (typeof data[field] !== 'string') return false;
+    if (typeof data[field] !== 'string' || data[field].trim() === '') return false;
   }
 
   const requiredArrayFields = [
@@ -39,20 +39,28 @@ export function validateAIResponse(data: any): data is FoodInsightResponse {
   ];
 
   for (const field of requiredArrayFields) {
-    if (!Array.isArray(data[field])) return false;
+    if (!Array.isArray(data[field]) || data[field].length === 0) return false;
+    // Ensure every element is a non-empty string
+    if (!data[field].every((item: unknown) => typeof item === 'string' && (item as string).trim() !== '')) return false;
   }
 
   if (!['low', 'medium', 'high', 'unclear'].includes(data.healthHaloRisk)) {
     return false;
   }
 
-  if (!data.nutritionalHighlights || typeof data.nutritionalHighlights !== 'object') {
+  // Explicit null guard — typeof null === 'object' in JS
+  if (
+    !data.nutritionalHighlights ||
+    typeof data.nutritionalHighlights !== 'object' ||
+    data.nutritionalHighlights === null ||
+    Array.isArray(data.nutritionalHighlights)
+  ) {
     return false;
   }
 
   const highlightFields = ['sugar', 'protein', 'fiber', 'sodium', 'fat'];
   for (const field of highlightFields) {
-    if (typeof data.nutritionalHighlights[field] !== 'string') return false;
+    if (typeof data.nutritionalHighlights[field] !== 'string' || data.nutritionalHighlights[field].trim() === '') return false;
   }
 
   return true;
