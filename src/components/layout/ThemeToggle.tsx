@@ -10,7 +10,9 @@ import {
   Waves, 
   Check, 
   Palette, 
-  ChevronDown 
+  ChevronDown,
+  Gamepad2,
+  Ghost
 } from 'lucide-react';
 import { useEffect, useState, useRef } from 'react';
 
@@ -64,7 +66,22 @@ const THEME_OPTIONS: ThemeOption[] = [
     iconColor: 'text-cyan-400',
     swatches: ['#020D1A', '#06192E', '#38BDF8'],
   },
-
+  {
+    id: 'synthwave',
+    name: 'Neon Synthwave',
+    subtitle: '80s arcade neon, fuchsia & retro cyan',
+    icon: Gamepad2,
+    iconColor: 'text-pink-400',
+    swatches: ['#0D0221', '#19093B', '#FF2A85'],
+  },
+  {
+    id: 'dracula',
+    name: 'Midnight Dracula',
+    subtitle: 'Velvet goth slate, lavender & mint',
+    icon: Ghost,
+    iconColor: 'text-purple-400',
+    swatches: ['#181825', '#1E1E2E', '#CBA6F7'],
+  },
   {
     id: 'system',
     name: 'System Default',
@@ -138,7 +155,7 @@ export default function ThemeToggle() {
               <span>Select Atmosphere</span>
             </div>
             <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-[var(--surface-hover)] text-[var(--text-muted)]">
-              6 Themes
+              {THEME_OPTIONS.length} Themes
             </span>
           </div>
 
