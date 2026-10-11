@@ -38,7 +38,7 @@ export default function RootLayout({
               (function() {
                 try {
                   var t = localStorage.getItem('theme') || 'dark';
-                  var darkThemes = ['dark', 'cyberpunk', 'forest', 'sunset', 'ocean'];
+                  var darkThemes = ['dark', 'cyberpunk', 'forest', 'sunset', 'ocean', 'synthwave', 'dracula'];
                   if (darkThemes.indexOf(t) !== -1 || (t === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                     document.documentElement.classList.add('dark');
                   }
@@ -53,7 +53,7 @@ export default function RootLayout({
           attribute="data-theme" 
           defaultTheme="dark" 
           enableSystem 
-          themes={['light', 'dark', 'cyberpunk', 'forest', 'sunset', 'ocean', 'system']}
+          themes={['light', 'dark', 'cyberpunk', 'forest', 'sunset', 'ocean', 'synthwave', 'dracula', 'system']}
         >
           <ThemeSync />
           <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 bg-emerald-500 text-white px-4 py-2 rounded-full font-medium shadow-lg">
