@@ -567,7 +567,7 @@ export default function Home() {
                   <Sparkles className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                  Gemini 3.6 Flash Active
+                  Gemini 2.0 Flash Active
                 </span>
               </div>
               <h3 className="text-2xl font-bold font-['var(--font-dm-sans)'] text-[var(--text-primary)] mb-2">
@@ -724,7 +724,7 @@ export default function Home() {
               Ready to verify what's actually in your pantry?
             </h3>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-              Scan any brand name or compare products right now. Powered by Google Gemini 3.6 Flash and USDA FoodData Central. No sign-up required.
+              Scan any brand name or compare products right now. Powered by Google Gemini 2.0 Flash and USDA FoodData Central. No sign-up required.
             </p>
           </div>
 
